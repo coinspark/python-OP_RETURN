@@ -54,7 +54,7 @@ As a library:
   testnet is whether to use the bitcoin testnet network (False if omitted)
 
 * Returns: {'error': '<some error string>'}
-       or: ('txid': '<sent txid>'}
+       or: {'txid': '<sent txid>'}
 
 * Examples
 
@@ -93,7 +93,8 @@ As a library:
   testnet is whether to use the bitcoin testnet network (False if omitted)
   
 * Returns: {'error': '<some error string>'}
-       or: {'txids': ['<1st txid>', '<2nd txid>', ...], 'ref': '<ref for retrieving data>'}
+       or: {'txids': ['<1st txid>', '<2nd txid>', ...],
+            'ref': '<ref for retrieving data>'}
            
 * Examples:
 
@@ -131,7 +132,7 @@ As a library:
   max_results is the maximum number of results to retrieve (in general, omit for 1)
   testnet is whether to use the bitcoin testnet network (False if omitted)
 
-* Returns: {'error': '<some error string>')
+* Returns: {'error': '<some error string>'}
        or: {'data': '<raw binary data>',
             'txids': ['<1st txid>', '<2nd txid>', ...],
             'heights': [<block 1 used>, <block 2 used>, ...],
