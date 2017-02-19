@@ -50,7 +50,7 @@ else:
 OP_RETURN_BTC_FEE=0.0001 # BTC fee to pay per transaction
 OP_RETURN_BTC_DUST=0.00001 # omit BTC outputs smaller than this
 
-OP_RETURN_MAX_BYTES=40 # maximum bytes in an OP_RETURN (40 as of Bitcoin 0.10)
+OP_RETURN_MAX_BYTES=80 # maximum bytes in an OP_RETURN (40 as of Bitcoin 0.10)
 OP_RETURN_MAX_BLOCKS=10 # maximum number of blocks to try when retrieving data
 
 OP_RETURN_NET_TIMEOUT=10 # how long to time out (in seconds) when communicating with bitcoin node
